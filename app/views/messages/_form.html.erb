@@ -1,0 +1,7 @@
+<%= form_with model: message do |form| %>
+  <%= form.rich_text_area :content %>
+
+  <div class='flex-end'>
+    <%= form.button class: 'btn' %>
+  </div>
+<% end %>

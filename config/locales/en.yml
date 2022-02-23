@@ -29,5 +29,19 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hello world"
+es:
+  new: Nuevo Mensaje
+  edit: Editar
+  delete: Borrar
+  confirm: ¿Estas seguro?
+  messages:
+    new:
+      title: Nuevo Mensaje
+    edit:
+      title: Editar Mensaje
+
+  helpers:
+    submit:
+      message:
+        create: Crear Mensaje
+        update: Actualizar Mensaje

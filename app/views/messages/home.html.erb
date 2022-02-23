@@ -1,0 +1,13 @@
+<section>
+  <div class="flex-end">
+    <%= link_to t('new'), new_message_path,
+      class: 'btn',
+      data: { turbo_frame: :modal } %>
+  </div>
+</section>
+<section>
+  <turbo-frame id='items' src='<%= messages_path %>'>
+    <h1>Loading</h1>
+  </turbo-frame>
+</section>
+

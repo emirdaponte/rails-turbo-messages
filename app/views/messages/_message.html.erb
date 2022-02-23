@@ -1,0 +1,16 @@
+<article id='<%= dom_id(message) %>'>
+  <%= message.content %>
+
+  <div class='flex-end'>
+    <%= link_to t('edit'),
+      edit_message_path(message),
+      class: 'btn',
+      data: { turbo_frame: :modal } %>
+
+    <%= button_to t('delete'),
+      message_path(message),
+      method: :delete,
+      class: 'btn btn-red',
+      form: { data: { turbo_confirm: t('confirm') } } %>
+  </div>
+</article>
